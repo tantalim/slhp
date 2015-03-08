@@ -1,0 +1,31 @@
+{
+  "dbName": "slhpReviewType",
+  "primaryKey": "ReviewTypeCode",
+  "columns": [
+    {
+      "name": "ReviewTypeCode",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ReviewType",
+      "label": "Review Type",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ActiveFlag",
+      "label": "Active Flag",
+      "dataType": "Boolean",
+      "columnDefault": "true",      
+      "required": true,
+      "updateable": true
+    },
+    {
+      "name": "DisplaySequence",
+      "label": "Display Sequence",
+      "required": false,
+      "updateable": true
+    }
+  ]
+}

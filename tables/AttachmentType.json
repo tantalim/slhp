@@ -1,0 +1,43 @@
+{
+  "dbName": "slhpAttachmentType",
+  "primaryKey": "AttachmentTypeCode",
+  "columns": [
+    {
+      "name": "AttachmentTypeCode",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "AttachmentType",
+      "label": "Attachment Type",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ActiveFlag",
+      "label": "Active Flag",
+      "dataType": "Boolean",
+      "columnDefault": "true",      
+      "required": true,
+      "updateable": true
+    },
+    {
+      "name": "DisplaySequence",
+      "label": "Display Sequence",
+      "required": false,
+      "updateable": true
+    }
+  ], 
+  "joins": [
+    {
+     "name": "AttachmentType",
+      "table": "AttachmentType",
+      "columns": [
+        {
+          "from": "AttachmentTypeCode",
+          "to": "AttachmentTypeCode"
+        }
+      ]
+    }    
+  ]
+}

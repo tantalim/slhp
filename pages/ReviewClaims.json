@@ -1,0 +1,49 @@
+{
+  "title": "Review Claims",
+  "icon": "fa-bed",
+  "viewMode": "table",
+  "fields": [
+    {
+      "name": "PatientID"
+    },
+    {
+      "name": "PatientName"
+    },
+    {
+      "name": "PatientFirstName"
+    },
+    {
+      "name": "PatientLastName"
+    },
+    {
+      "name": "PatientBirthDate"
+    }
+  ],
+  "children": [
+    {
+      "name": "Claim",
+      "title": "Claims",
+      "viewMode": "table",
+      "fields": [
+        {
+          "name": "ClaimClaimID"
+        },
+        {
+          "name": "ClaimPatientID"
+        },
+        {
+          "name": "ClaimClaimNumber"
+        },
+        {
+          "name": "ClaimServiceDate"
+        },
+        {
+          "name": "ClaimVendorID"
+        },
+        {
+          "name": "ClaimProviderID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "dbName": "slhpIssueType",
+  "primaryKey": "IssueTypeCode",
+  "columns": [
+    {
+      "name": "IssueTypeCode",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "IssueType",
+      "label": "Issue Type",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ActiveFlag",
+      "label": "Active Flag",
+      "dataType": "Boolean",
+      "columnDefault": "true",      
+      "required": true,
+      "updateable": true
+    },
+    {
+      "name": "DisplaySequence",
+      "label": "Display Sequence",
+      "required": false,
+      "updateable": true
+    }
+  ]
+}

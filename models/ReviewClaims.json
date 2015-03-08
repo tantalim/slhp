@@ -1,0 +1,71 @@
+{
+  "basisTable": "Patient",
+  "limit": 10,
+  "orderBy": [
+    {
+      "fieldName": "PatientLastName"
+    },
+    {
+      "fieldName": "PatientFirstName"
+    }
+  ],
+  "fields": [
+    {
+      "name": "PatientID",
+      "updateable": false,
+      "basisColumn": "PatientID"
+    },
+    {
+      "name": "PatientName",
+      "basisColumn": "Name"
+    },
+    {
+      "name": "PatientFirstName",
+      "basisColumn": "FirstName"
+    },
+    {
+      "name": "PatientLastName",
+      "basisColumn": "LastName"
+    },
+    {
+      "name": "PatientBirthDate",
+      "basisColumn": "BirthDate"
+    }
+  ],
+  "children": [
+    {
+      "name": "Claim",
+      "basisTable": "Claim",
+      "parentLink": {
+        "parentField": "PatientID",
+        "childField": "ClaimPatientID"
+      },
+      "fields": [
+        {
+          "name": "ClaimClaimID",
+          "basisColumn": "ClaimID"
+        },
+        {
+          "name": "ClaimPatientID",
+          "basisColumn": "PatientID"
+        },
+        {
+          "name": "ClaimClaimNumber",
+          "basisColumn": "ClaimNumber"
+        },
+        {
+          "name": "ClaimServiceDate",
+          "basisColumn": "ServiceDate"
+        },
+        {
+          "name": "ClaimVendorID",
+          "basisColumn": "VendorID"
+        },
+        {
+          "name": "ClaimProviderID",
+          "basisColumn": "ProviderID"
+        }
+      ]
+    }
+  ]
+}

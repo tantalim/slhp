@@ -1,0 +1,31 @@
+{
+  "dbName": "slhpReviewPassStatus",
+  "primaryKey": "ReviewPassStatusCode",
+  "columns": [
+    {
+      "name": "ReviewPassStatusCode",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ReviewPassStatus",
+      "label": "Review Pass Status",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ActiveFlag",
+      "label": "Active Flag",
+      "dataType": "Boolean",
+      "columnDefault": "true",      
+      "required": true,
+      "updateable": true
+    },
+    {
+      "name": "DisplaySequence",
+      "label": "Display Sequence",
+      "required": false,
+      "updateable": true
+    }
+  ]
+}

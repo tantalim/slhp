@@ -1,0 +1,51 @@
+{
+  "dbName": "slhpClaimDiagnosis",
+  "primaryKey": "ClaimDiagnosisID",
+  "columns": [
+    {
+      "name": "ClaimDiagnosisID",
+      "dataType": "Integer",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "ClaimID",
+      "dataType": "Integer",
+      "required": true,
+      "updateable": false
+    },
+    {
+      "name": "DiagnosisID",
+      "dataType": "Integer",
+      "required": true,
+      "updateable": false    
+    },
+    {
+      "name": "Position",
+      "dataType": "Integer",
+      "label": "Position"
+    }
+  ],
+  "joins": [
+    {
+      "name": "Diagnosis",
+      "table": "Diagnosis",
+      "columns": [
+        {
+          "from": "DiagnosisID",
+          "to": "DiagnosisID"
+        }
+      ]
+    },
+    {
+      "name": "Claim",
+      "table": "Claim",
+      "columns": [
+        {
+          "from": "ClaimID",
+          "to": "ClaimID"
+        }
+      ]
+    }    
+  ]
+}
